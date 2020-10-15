@@ -5,6 +5,21 @@
         <title>Exemplo</title>
     </head>
     <body>
-        <h1>Olá Mundo!!!</h1>
+        <h1>Tarefas</h1>
+        <label for"txtDescricao">Tarefa</label>
+        <input type="text" id="txtDescricao" >
+        <button id="btnAdd" type="button" onclick="addTarefa()">Adicionar</button>
+        <hr />
+        <table>
+            <thead>
+                <th>Descrição</th>
+                <th>Concluída</th>
+            </thead>
+            <tbody id="tbl_tarefas">
+            </tbody>
+
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <script src="js/index.js"></script>
+        </table>
     </body>
 </html>
