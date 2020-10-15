@@ -2,7 +2,7 @@ var tarefas =  [];
 
 function addTarefa() {
     let tarefa = {
-        id : tarefas[tarefas.length -1].id + 1,
+        id : (tarefas.length > 0) ? tarefas[tarefas.length -1].id + 1 : 1,
         descrição : document.querySelector("#txtDescricao").value,
         concluída : false
     }
